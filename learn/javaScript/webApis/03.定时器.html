@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定时器</title>
+</head>
+<body>
+    <div></div>
+
+    <script>
+        // 间歇函数
+        /*
+        setInterval(function, delay)
+        作用：每隔指定的时间间隔，重复执行某个函数。
+        clearInterval(intervalId)
+        作用：停止由 setInterval 创建的间歇执行。
+        */
+        let count = 0;
+        let intervalId = setInterval(() => {
+            count++;
+            console.log(`间歇执行第 ${count} 次`);
+            if (count === 5) {
+                clearInterval(intervalId);
+                console.log("间歇函数已停止");
+            }
+        }, 1000);
+
+    
+        // 延时函数
+        setTimeout(() => {
+            console.log("延时函数执行");
+        }, 6000);
+
+
+    </script>
+</body>
+</html>

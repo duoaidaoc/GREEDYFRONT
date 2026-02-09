@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>in&output</title>
+</head>
+<body>
+
+    <script>
+        // 输出到 body
+        document.write("I am div");
+        document.write("<h1>I am h1</h1>");
+        // 输出到警示框
+        alert("Hello World");
+        // 输出到控制台
+        console.log("Hello Console");
+
+        // 输入示例 显示一个提示框，用户输入内容后存储在变量 name 中
+        var name = prompt("请输入你的名字：", "默认名字");
+        console.log("你好，" + name);
+
+        // 执行顺序：
+        // 一般从上往下执行，但是 alert 和 prompt 会暂停代码执行，直到用户响应
+    </script>
+</body>
+</html>

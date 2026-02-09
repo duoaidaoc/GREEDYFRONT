@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function and anonymous function</title>
+</head>
+<body>
+    <script>
+        // 函数的定义
+        function greet(name) {
+            return "Hello, " + name + "!";
+        }
+
+        // 调用函数
+        console.log(greet("Alice")); // 输出: Hello, Alice!
+
+        // 匿名函数的定义和调用
+        const add = function(a, b) {
+            return a + b;
+        };
+
+        console.log(add(5, 3)); // 输出: 8
+
+        // 使用箭头函数定义匿名函数
+        const multiply = (x, y) => x * y;
+        console.log(multiply(4, 2)); // 输出: 8
+
+        // 立即执行函数表达式 (IIFE)
+        (function(a) {
+            console.log("This is an IIFE!" + a);
+        })('a');
+
+        
+
+    </script>
+</body>
+</html>

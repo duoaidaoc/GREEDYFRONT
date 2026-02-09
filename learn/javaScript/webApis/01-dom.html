@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>title</h1>
+    <div class="box">box</div>
+    <ul>
+        <li>test1</li>
+        <li>test2</li>
+        <li>test3</li>
+    </ul>
+
+    <script>
+        // DOM (Document Object Model) 是一个编程接口，用于操作HTML和XML文档
+        // 通过DOM，可以动态地访问和更新文档的内容、结构和样式
+        // 例如，使用JavaScript修改网页内容
+        
+        // querySeletor
+        const divElement = document.querySelector('div');
+        divElement.textContent = 'Hello, DOM!';
+
+        // 根据css选择器获取dom元素
+        const firstLi = document.querySelector('ul li:first-child');
+        console.log(firstLi.textContent); // 输出: test1
+
+        // querySelectorAll
+        const allLi = document.querySelectorAll('ul li');
+        allLi.forEach((li, index) => {
+            console.log(`Item ${index + 1}: ${li.textContent}`);
+        });
+
+    </script>
+
+
+</body>
+</html>

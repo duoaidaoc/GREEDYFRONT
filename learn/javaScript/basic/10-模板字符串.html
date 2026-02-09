@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template string</title>
+</head>
+<body>
+
+    <script>
+        let name = "Alice";
+        // let nan = +"NotANumber"; // NaN 示例
+        let age = 25;
+
+        // 使用模板字符串创建多行字符串和嵌入变量
+        let message = `Hello, my name is ${name}.` +
+                      `\nI am ${age} years old.` +
+                      `\nI love programming!`;
+        console.log(message);
+
+
+        // typeof 操作符示例
+        console.log(`Type of name: ${typeof name}`); // string
+        console.log(`Type of age: ${typeof age}`);   // number  
+    </script>
+</body>
+</html>

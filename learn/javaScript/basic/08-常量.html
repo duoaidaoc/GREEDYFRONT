@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>const</title>
+</head>
+<body>
+    <script>
+        const PI = 3.14159;
+        console.log("圆周率是：", PI);
+
+        // 尝试修改常量会报错
+        // PI = 3.14; // 这行代码会导致错误
+
+        const fruits = ["Apple", "Banana", "Cherry"];
+        console.log("初始数组：", fruits);
+
+        // 修改数组元素
+        fruits[1] = "Blueberry";
+        console.log("修改后的数组：", fruits);
+
+        // 添加新元素
+        fruits.push("Date");
+        console.log("添加新元素后的数组：", fruits);
+    </script>
+</body>
+</html>

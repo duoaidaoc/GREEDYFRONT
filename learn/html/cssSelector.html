@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS选择器示例</title>
+    <style>
+        /* 通用选择器使用 * 表示，设置所有元素，优先级最低 */
+        /* 实际开发不建议使用，因为会影响所有元素的性能 */
+        * {
+            /* something */
+        }
+        /* ID选择器 */
+        #uniqueBox {
+            background-color: lightgreen;
+            border: 3px dashed green;
+        }
+        /* 类选择器 */
+        .container .box {
+            background-color: lightcoral;
+            border-color: red;
+        }
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 5px solid blue;
+            padding: 20px;
+            margin: 15px;
+        }
+        /* 元素选择器 */
+        div {
+            font-size: 16px;
+            color: darkblue;
+        }
+        /* 伪类选择器 */
+        .box:hover {
+            background-color: yellow;
+            cursor: pointer;
+        }
+        /* 伪元素选择器 */
+        .box::before {
+            content: "Before";
+            color: purple;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>CSS选择器示例</h1>
+
+    <div class="box">
+        这是一个通用选择器 + 元素选择器的盒子。可以看到优先级更高的是元素选择器的样式。
+    </div>
+
+    <div id="uniqueBox" class="box">
+        这是一个ID选择器的盒子。
+    </div>
+
+    <div class="container">
+        <div class="box">
+            这是一个类选择器的盒子，位于容器内。
+        </div>
+    </div>
+
+    <div class="box">
+        这是一个元素选择器的盒子。
+    </div>
+
+    <p class="box">
+        这是一个通用选择器的盒子
+    </p>
+
+    <p>将鼠标悬停在盒子上以查看伪类效果。</p>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    // 现在流行函数式编程，这里简单介绍一下对象
+    
+    <script>
+        // 创建一个对象
+        const person = {
+            name: "Alice",
+            age: 30,
+            greet: function() {
+                console.log("Hello, my name is " + this.name);
+            }
+        };
+
+
+        // 访问对象的属性
+        console.log("Name:", person.name);
+        console.log("Age:", person.age);
+
+        // 调用对象的方法
+        person.greet();
+    </script>
+</body>
+</html>

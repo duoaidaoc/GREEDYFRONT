@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript example</title>
+</head> 
+    <body>
+        <h1>JavaScript example</h1>
+        <p id="demo">JavaScript can change HTML content.</p>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+
+        <h1>常量</h1>
+        <p>JavaScript 使用 const 关键字来创建常量。</p>
+        <script>
+            const PI = 3.14;
+            document.write("圆周率的值是: " + PI);
+        </script>
+
+        <h1>变量</h1>
+        <p>JavaScript 使用 var 关键字来创建变量。</p>
+        <script>
+            var x = 5;
+            var y = 6;
+            document.write("x 和 y 的和是: " + (x + y));
+        </script>
+
+        <h1>数据类型</h1>
+        <p>JavaScript 支持多种数据类型，包括字符串、数字、布尔值、对象等。</p>
+        <script>
+            var str = "Hello, World!";
+            var num = 42;
+            var bool = true;
+            document.write("<br>字符串: " + str);
+            document.write("<br>数字: " + num);
+            document.write("<br>布尔值: " + bool);
+        </script>
+
+    
+    </body>
+</html>

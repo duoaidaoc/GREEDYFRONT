@@ -1,0 +1,101 @@
+<!-- xml语言说：这是一个HTML文档的开始 -->
+<!DOCTYPE html>
+<!-- lang是语言属性，指定文档的语言为中文 -->
+<html lang="zh-CN">
+<!-- head部分是文档的头部信息,用于定义文档的元数据 -->
+<head>
+    <!-- meta标签定义文档的元数据 -->
+    <!-- charset属性定义字符编码为UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- viewport meta标签用于响应式设计 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>这是一个标题</title>
+</head>
+
+<!-- body部分是文档的主体内容 -->
+<body>
+    <h1> 一级标题标签</h1>
+    <h2> 二级标题标签</h2>
+    <h3> 三级标题标签</h3>
+    <h4> 四级标题标签</h4>
+    <h5> 五级标题标签</h5>
+    <h6> 六级标题标签</h6>
+    <!-- html没有7级标签 -->
+    
+    <p>这是一个段落标签，用于包含文本内容。</p>
+    
+    <p>这是另一个段落标签。<b>但是字体加粗</b><i>斜体</i><u>下划线</u></p>
+
+    <!-- 无序列表 -->
+    <ul>
+        <li>无序列表项1</li>
+        <li>无序列表项2</li>
+        <li>无序列表项3</li>
+    </ul>
+
+    <!-- 有序列表 -->
+    <ol>
+        <li>有序列表项1</li>
+        <li>有序列表项2</li>
+        <li>有序列表项3</li>
+    </ol>
+
+    <!-- 表格 可设置 属性 border-->
+    <table border="1">
+        <tr>
+            <th>表头1</th>
+            <th>表头2</th>
+            <th>表头3</th>
+        </tr>
+        <tr>
+            <td>单元格1</td>
+            <td>单元格2</td>
+            <td>单元格3</td>
+        </tr>
+        <tr>
+            <td>单元格4</td>
+            <td>单元格5</td>
+            <td>单元格6</td>
+        </tr>
+
+    </table>
+
+    <!-- 属性介绍 -->
+    <p id="describe" class="'section"> 
+        id属性：用于唯一标识一个元素，通常用于JavaScript和CSS中进行元素选择和操作。<br>
+        class属性：用于为元素分配一个或多个类名，通常用于CSS中进行样式定义和应用。<br>
+    </p>
+
+    <a href="https://www.example.com" target="_blank">
+        这是一个链接，点击打开example.com
+    </a>
+
+    <!-- 图片标签, src为图片的URL，alt为图片的替代文本 -->
+    <img src="https://via.placeholder.com/150" alt="示例图片">
+    <!-- 属性名称不区分大小写，属性值对大小写敏感 -->
+    <img SRC="https://via.placeholder.com/100" ALT="另一个示例图片">
+    <img SrC="https://via.placeholder.com/50" aLt="第三个示例图片">
+
+    <!-- class id style -->
+    <p class="highlight" id="unique-paragraph" style="color: blue; font-weight: bold;">
+        这是一个带有class、id和style属性的段落。
+    </p>
+
+    <!-- a标签的target属性 -->
+    <a href="https://www.openai.com" target="_self">
+        这是一个链接，点击在当前窗口打开OpenAI
+    </a>
+    <a href="https://www.openai.com" target="_parent">
+        这是一个链接，点击在父窗口打开OpenAI
+    </a>
+    <a href="https://www.openai.com" target="_top">
+        这是一个链接，点击在整个窗口打开OpenAI
+    </a>
+    <a href="https://www.openai.com" target="_blank">
+        这是一个链接，点击在新标签页打开OpenAI
+    </a>
+
+</body>
+
+
+</html>

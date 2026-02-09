@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件监听</title>
+</head>
+<body>
+    //addEventListener 示例
+    <button id="myButton">点击我</button>
+
+
+    <script>
+        const button = document.getElementById("myButton");
+        
+        button.onclick = function() {
+            console.log("按钮被点击了（使用 onClick 事件）");
+        };
+
+        // 添加点击事件监听器
+        button.addEventListener("click", () => {
+            alert("按钮被点击了！");
+        });
+
+        // 添加鼠标悬停事件监听器
+        button.addEventListener("mouseover", () => {
+            console.log("鼠标悬停在按钮上");
+        });
+    </script>
+</body>
+</html>
